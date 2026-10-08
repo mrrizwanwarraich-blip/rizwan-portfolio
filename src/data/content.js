@@ -11,11 +11,11 @@ export const profile = {
   shortName: 'Rizwan Javed',
   initials: 'RJ',
   role: 'Administration & Operations Manager',
-  location: 'Riyadh, Saudi Arabia',
-  status: 'Admin Manager at LCC A-TechM',
+  location: 'Saudi Arabia',
+  status: 'Admin Manager, Tech Mahindra Arabia · NEOM',
   headline: 'Muhammad Rizwan Javed',
   intro:
-    'Administration and operations manager with 11+ years in telecommunications. I oversee operations, optimise resources and implement efficient systems, delivering projects on time and within budget.',
+    'Administration and operations manager with 11+ years across telecommunications and giga-projects, now leading administration for Tech Mahindra Arabia on NEOM. I oversee operations, optimise resources and implement efficient systems that keep projects on time and within budget.',
   portrait: '/images/portrait.jpg',
   heroImage: unsplash('1497366216548-37526070297c', 2400),
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
@@ -24,7 +24,7 @@ export const profile = {
 export const stats = [
   { value: '11', suffix: '+', label: 'Years of experience' },
   { value: '20', suffix: '+', label: 'Projects delivered' },
-  { value: '3', suffix: '', label: 'Leadership roles held' },
+  { value: '4', suffix: '', label: 'Roles across 2 companies' },
   { value: '4', suffix: '', label: 'Languages spoken' },
 ]
 
@@ -36,8 +36,8 @@ export const sections = {
   },
   experience: {
     eyebrow: 'Experience',
-    title: 'Eleven years at LCC A-TechM.',
-    lead: 'Three roles at one company: EHS Lead from 2015, Project Manager from 2017 and Admin Manager since 2020.',
+    title: 'From EHS Lead to NEOM.',
+    lead: 'Nine years of growth at LCC A-TechM, and Admin Manager at Tech Mahindra Arabia on the NEOM project since 2024.',
   },
   projects: {
     eyebrow: 'Projects',
@@ -59,11 +59,12 @@ export const sections = {
 export const about = {
   paragraphs: [
     'I oversee operations, optimise resources and implement efficient systems that raise productivity across the organisation.',
-    'I joined LCC A-TechM in Riyadh in 2015 as EHS Lead, moved up to Project Manager in 2017 and have been Admin Manager since 2020. I coordinate cross-functional teams, manage timelines and budgets, and work closely with stakeholders, vendors and clients to reach strategic objectives in the telecom industry.',
+    'I joined LCC A-TechM in Riyadh in 2015 as EHS Lead, moved up to Project Manager in 2017 and became Admin Manager in 2020. Since 2024 I have been Admin Manager at Tech Mahindra Arabia on the NEOM project. I coordinate cross-functional teams, manage timelines and budgets, and work closely with stakeholders, vendors and clients to reach strategic objectives.',
     'My work has earned multiple project completion awards and a Best EHS Lead award from Huawei, as well as multiple Best Employee of the Year awards from LCC A-TechM.',
   ],
   competencies: [
     'Administration Management',
+    'Life Support Services',
     'Operations Management',
     'Project Management',
     'Planning & Execution',
@@ -92,19 +93,35 @@ export const about = {
 
 export const experience = [
   {
+    role: 'Admin Manager — NEOM Project',
+    company: 'Tech Mahindra Arabia Ltd',
+    location: 'NEOM',
+    period: '2024 — Present',
+    summary:
+      'Lead administration and site operations for Tech Mahindra Arabia on the NEOM giga-project.',
+    highlights: [
+      'Lead end-to-end administration and site operations, enabling project teams to deliver in a fast-paced giga-project environment.',
+      'Oversee life support services for project staff, including accommodation, transportation, office facilities and welfare.',
+      'Act as the key administrative liaison with NEOM client stakeholders, contractors and vendors.',
+      'Develop and control administrative budgets, procurement and service contracts, driving cost efficiency.',
+      'Implement policies, SOPs and document control aligned with company and client standards.',
+      'Champion health, safety, security and welfare across project facilities.',
+    ],
+  },
+  {
     role: 'Admin Manager',
     company: 'LCC A-TechM',
     location: 'Riyadh',
-    period: 'Nov 2020 — Present',
+    period: 'Nov 2020 — 2024',
     summary:
-      'Lead all office administration and day-to-day operations, working closely with senior management on strategy and cross-department coordination.',
+      'Led all office administration and day-to-day operations, working closely with senior management on strategy and cross-department coordination.',
     highlights: [
-      'Direct end-to-end office administration, including facilities maintenance, supplies, equipment and space utilisation.',
-      'Lead and mentor the administrative team, setting clear priorities and fostering a culture of accountability.',
-      'Develop and control administrative budgets, identifying cost-saving opportunities and enforcing disciplined expense management.',
-      'Formulate and implement policies, SOPs and procedures that strengthen compliance and standardise workflows.',
-      'Negotiate and administer vendor contracts, monitoring performance to ensure quality, cost-effective service delivery.',
-      'Oversee facility security, health and safety, maintaining a safe and compliant workplace.',
+      'Directed end-to-end office administration, including facilities maintenance, supplies, equipment and space utilisation.',
+      'Led and mentored the administrative team, setting clear priorities and fostering a culture of accountability.',
+      'Developed and controlled administrative budgets, identifying cost-saving opportunities and enforcing disciplined expense management.',
+      'Formulated and implemented policies, SOPs and procedures that strengthened compliance and standardised workflows.',
+      'Negotiated and administered vendor contracts, monitoring performance to ensure quality, cost-effective service delivery.',
+      'Oversaw facility security, health and safety, maintaining a safe and compliant workplace.',
     ],
   },
   {
@@ -142,6 +159,20 @@ export const experience = [
 ]
 
 export const projects = [
+  {
+    title: 'NEOM Project Administration',
+    category: 'Administration',
+    year: '2024 — Present',
+    image: unsplash('1486406146926-c627a92ad1ab'),
+    summary:
+      'Leading administration, life support and site operations for Tech Mahindra Arabia’s teams on NEOM.',
+    outcome: 'Smooth day-to-day operations on a giga-project',
+    details: [
+      'Oversee accommodation, transportation, office facilities and staff welfare.',
+      'Coordinate with NEOM client stakeholders, contractors and vendors.',
+      'Apply company and client standards for policies, documents and safety.',
+    ],
+  },
   {
     title: 'Telecom Project Delivery for Huawei',
     category: 'Project Delivery',
@@ -269,7 +300,7 @@ export const testimonials = []
 export const contact = {
   email: 'rixwanali@ymail.com',
   phone: '+966 59 425 7907',
-  location: 'Riyadh, Saudi Arabia',
+  location: 'Saudi Arabia',
   linkedin: '', // add LinkedIn URL when available
 }
 
