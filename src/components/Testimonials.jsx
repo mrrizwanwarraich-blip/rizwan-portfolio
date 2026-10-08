@@ -2,6 +2,7 @@ import { testimonials } from '../data/content'
 import Reveal from './Reveal'
 
 export default function Testimonials() {
+  if (!testimonials.length) return null
   return (
     <section className="section testimonials" aria-label="Testimonials">
       <div className="container quote-grid">

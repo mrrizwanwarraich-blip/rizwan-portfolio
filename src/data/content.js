@@ -1,253 +1,248 @@
-// All site content lives here. Replace the dummy data with real data —
+// All site content lives here. Edit this file to update the site —
 // no component changes needed. Image fields accept a URL or a path in /public
 // (e.g. '/images/portrait.jpg'); leave empty ('') to show the neutral placeholder.
+// Project and event images are stock photos for now; replace with real ones.
 
 const unsplash = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
 
 export const profile = {
-  name: 'Rizwan Ahmed',
-  shortName: 'Rizwan',
-  initials: 'RA',
-  role: 'Operations & Administration Manager',
+  name: 'Muhammad Rizwan Javed',
+  shortName: 'Rizwan Javed',
+  initials: 'RJ',
+  role: 'Administration & Operations Manager',
   location: 'Riyadh, Saudi Arabia',
-  availability: 'Open to senior operations leadership roles',
+  availability: 'Open to senior administration and operations roles',
   headline: 'Operations that run quietly. Results that speak loudly.',
   intro:
-    'For 12 years I have built the systems, teams and routines that let organisations scale without friction — from multi-site facilities to enterprise-wide process change.',
-  portrait: '',
+    'For more than 11 years in telecommunications, I have led administration, projects and workplace safety — keeping operations efficient, compliant and on budget.',
+  portrait: '/images/portrait.jpg',
   heroImage: unsplash('1497366216548-37526070297c', 2400),
-  cv: '#', // e.g. '/rizwan-cv.pdf'
+  cv: '/Muhammad_Rizwan_Javed_CV.pdf',
 }
 
 export const stats = [
-  { value: '12', suffix: '+', label: 'Years of experience' },
+  { value: '11', suffix: '+', label: 'Years of experience' },
   { value: '20', suffix: '+', label: 'Projects delivered' },
-  { value: '150', suffix: '+', label: 'People led across teams' },
-  { value: '18', suffix: '%', label: 'Average cost reduction' },
+  { value: '3', suffix: '', label: 'Leadership roles held' },
+  { value: '4', suffix: '', label: 'Languages spoken' },
 ]
 
 export const about = {
   paragraphs: [
-    'I am an operations and administration leader who believes that great organisations are built on clear processes, accountable teams and decisions grounded in data.',
-    'My work spans facilities management, vendor and procurement strategy, compliance, budgeting and cross-functional project delivery. I have led operations for organisations of 80 to 1,200 employees across corporate, hospitality and logistics environments.',
-    'I am at my best when bringing order to complexity — turning scattered workflows into reliable systems, and helping people do their best work.',
+    'I am an administration and operations leader who brings structure, efficiency and accountability to every team I work with.',
+    'Since 2015 I have grown with LCC A-TechM in Riyadh, from EHS Lead to Project Manager to Admin Manager. Along the way I have delivered telecom projects for Huawei, managed budgets and vendor contracts, and built the policies and systems that keep a busy organisation running smoothly.',
+    'My work has been recognised with multiple project completion awards and a Best EHS Lead award from Huawei, and multiple Best Employee of the Year awards from LCC A-TechM.',
   ],
   competencies: [
-    'Operations Strategy',
-    'Process Optimisation',
-    'Team Leadership',
-    'Budget & Cost Control',
-    'Vendor Management',
+    'Administration Management',
+    'Operations Management',
+    'Project Management',
+    'Planning & Execution',
+    'Service Delivery',
+    'Budgeting & Cost Control',
+    'Vendor & Contract Management',
     'Facilities Management',
-    'Compliance & Policy',
-    'Project Delivery',
-    'Procurement',
-    'Change Management',
-    'KPI & Reporting',
-    'Event Management',
+    'Policy & Procedures',
+    'Logistics Management',
+    'Risk Management',
+    'EHS Management',
+    'Records & Document Control',
+    'Stakeholder Management',
+    'Team Leadership',
   ],
   education: [
-    { title: 'MBA, Operations Management', place: 'University Name', year: '2016' },
-    { title: 'BBA, Business Administration', place: 'University Name', year: '2012' },
+    { title: 'Bachelor of Commerce (B.Com)', place: 'University of the Punjab', year: '2012' },
+    { title: 'Intermediate', place: 'BISE Faisalabad', year: '2010' },
+    { title: 'Diploma in CAD', place: 'Technical Board, Faisalabad', year: '' },
   ],
   certifications: [
-    { title: 'Project Management Professional (PMP)', place: 'PMI', year: '2019' },
-    { title: 'Lean Six Sigma Green Belt', place: 'IASSC', year: '2018' },
-    { title: 'Certified Facility Manager (CFM)', place: 'IFMA', year: '2021' },
+    { title: 'IOSH Certification (EHS)', place: 'Shields Limited, Saudi Arabia', year: '' },
   ],
+  languages: ['English', 'Arabic', 'Urdu', 'Punjabi'],
 }
 
 export const experience = [
   {
-    role: 'Senior Operations Manager',
-    company: 'Company Name',
+    role: 'Admin Manager',
+    company: 'LCC A-TechM',
     location: 'Riyadh',
-    period: '2021 — Present',
+    period: 'Nov 2020 — Present',
     summary:
-      'Lead operations and administration for a 1,200-person organisation across four sites, reporting directly to the COO.',
+      'Lead all office administration and day-to-day operations, working closely with senior management on strategy and cross-department coordination.',
     highlights: [
-      'Cut annual operating costs by 22% through vendor consolidation and renegotiated contracts.',
-      'Introduced a unified KPI dashboard used by the leadership team every week.',
-      'Led a 45-person team across facilities, procurement and administration.',
+      'Direct end-to-end office administration, including facilities maintenance, supplies, equipment and space utilisation.',
+      'Lead and mentor the administrative team, setting clear priorities and fostering a culture of accountability.',
+      'Develop and control administrative budgets, identifying cost-saving opportunities and enforcing disciplined expense management.',
+      'Formulate and implement policies, SOPs and procedures that strengthen compliance and standardise workflows.',
+      'Negotiate and administer vendor contracts, monitoring performance to ensure quality, cost-effective service delivery.',
+      'Oversee facility security, health and safety, maintaining a safe and compliant workplace.',
     ],
   },
   {
-    role: 'Operations Manager',
-    company: 'Company Name',
-    location: 'Dubai',
-    period: '2017 — 2021',
+    role: 'Project Manager',
+    company: 'LCC A-TechM',
+    location: 'Riyadh',
+    period: 'Nov 2017 — Oct 2020',
     summary:
-      'Owned day-to-day operations, facilities and procurement for a fast-growing regional business.',
+      'Planned and delivered telecom projects for Huawei, from initiation to close-out, on schedule and within budget.',
     highlights: [
-      'Opened and fitted out two new offices on schedule and 9% under budget.',
-      'Reduced procurement cycle time from 21 to 8 days with a digital approvals workflow.',
-      'Achieved ISO 9001 certification for the first time in company history.',
+      'Spearheaded the planning, execution and close-out of telecom projects within approved budgets.',
+      'Served as primary point of contact for clients, vendors and internal teams, keeping scope and objectives aligned.',
+      'Allocated and optimised manpower, equipment and budget across concurrent projects.',
+      'Identified and mitigated technical, regulatory and market risks through structured risk management.',
+      'Tracked milestones and KPIs, reported progress to stakeholders and drove corrective actions.',
+      'Earned multiple project completion awards from Huawei.',
     ],
   },
   {
-    role: 'Administration Manager',
-    company: 'Company Name',
-    location: 'Karachi',
-    period: '2014 — 2017',
+    role: 'EHS Lead',
+    company: 'LCC A-TechM',
+    location: 'Riyadh',
+    period: 'Jun 2015 — Oct 2017',
     summary:
-      'Managed office administration, HR operations support and company-wide policy.',
+      'Led environment, health and safety across workplaces and telecom sites.',
     highlights: [
-      'Rewrote the administrative policy handbook adopted across all departments.',
-      'Centralised asset management, recovering 14% of untracked equipment value.',
-    ],
-  },
-  {
-    role: 'Operations Executive',
-    company: 'Company Name',
-    location: 'Karachi',
-    period: '2012 — 2014',
-    summary:
-      'Supported operations planning, vendor coordination and reporting for regional offices.',
-    highlights: [
-      'Built the monthly operations report later adopted as the company standard.',
+      'Conducted hazard identification and risk assessments, implementing effective control measures.',
+      'Ensured full compliance with EHS regulations and client safety standards.',
+      'Developed and implemented emergency response plans for accidents, incidents and natural disasters.',
+      'Designed and delivered safety training for employees and field teams.',
+      'Led incident investigations with root cause analysis and corrective and preventive actions.',
+      'Recognised with the Best EHS Lead award from Huawei.',
     ],
   },
 ]
 
 export const projects = [
   {
-    title: 'Multi-site Facilities Consolidation',
-    category: 'Facilities',
-    year: '2024',
-    image: unsplash('1497366811353-6870744d04b2'),
-    summary:
-      'Consolidated four facilities contracts into one integrated service model across all sites.',
-    outcome: '22% annual cost saving',
-    details: [
-      'Ran a structured tender with 11 vendors and a weighted scoring model.',
-      'Defined SLAs and a monthly service review with clear escalation paths.',
-      'Moved 1,200 staff to a single helpdesk with no service disruption.',
-    ],
-  },
-  {
-    title: 'Digital Procurement Workflow',
-    category: 'Process',
-    year: '2023',
-    image: unsplash('1460925895917-afdab827c52f'),
-    summary:
-      'Replaced paper-based purchase approvals with a digital, auditable workflow.',
-    outcome: 'Cycle time 21 → 8 days',
-    details: [
-      'Mapped the end-to-end approval process with finance and department heads.',
-      'Introduced tiered approval limits and automated budget checks.',
-      'Trained 140 requesters and approvers over three weeks.',
-    ],
-  },
-  {
-    title: 'New Regional Headquarters',
+    title: 'Telecom Project Delivery for Huawei',
     category: 'Project Delivery',
-    year: '2022',
-    image: unsplash('1497215842964-222b430dc094'),
+    year: '2017 — 2020',
+    image: unsplash('1516044734145-07ca8eef8731'),
     summary:
-      'Led the fit-out and relocation of 350 employees into a new regional headquarters.',
-    outcome: 'Delivered 9% under budget',
+      'Planned and delivered telecom projects for Huawei from initiation to close-out, managing teams, vendors and budgets.',
+    outcome: 'Multiple Huawei project completion awards',
     details: [
-      'Managed contractors, IT, security and furniture vendors to a single plan.',
-      'Moved all teams over one weekend with zero lost working days.',
+      'Owned schedules, budgets and resource plans across concurrent projects.',
+      'Coordinated clients, vendors, field teams and internal departments.',
+      'Tracked milestones and KPIs and reported progress to stakeholders.',
     ],
   },
   {
-    title: 'ISO 9001 Certification',
-    category: 'Compliance',
-    year: '2020',
+    title: 'Administrative Policies & SOPs',
+    category: 'Administration',
+    year: '2020 — Present',
     image: unsplash('1454165804606-c3d57bc86b40'),
     summary:
-      'Prepared the organisation for its first ISO 9001 quality management certification.',
-    outcome: 'Certified on first audit',
+      'Built the administrative policies and standard procedures that the organisation runs on.',
+    outcome: 'Standardised, compliant workflows',
     details: [
-      'Documented 60+ core processes and assigned clear process owners.',
-      'Ran internal audits and corrective-action tracking for six months.',
+      'Wrote and rolled out policies covering office operations, supplies and equipment.',
+      'Aligned procedures with company and regulatory requirements.',
+      'Introduced clear ownership for tasks across the administrative team.',
     ],
   },
   {
-    title: 'Fleet & Logistics Optimisation',
+    title: 'Vendor & Contract Management',
     category: 'Operations',
-    year: '2019',
-    image: unsplash('1586528116311-ad8dd3c8310d'),
+    year: '2020 — Present',
+    image: unsplash('1600880292203-757bb62b4baf'),
     summary:
-      'Redesigned routing and maintenance schedules for a 60-vehicle service fleet.',
-    outcome: '15% lower fuel spend',
+      'Negotiate and manage contracts with service providers, making sure services are delivered as agreed.',
+    outcome: 'Cost-effective, reliable services',
     details: [
-      'Introduced GPS tracking and preventive maintenance scheduling.',
-      'Cut vehicle downtime by a third within the first year.',
+      'Negotiated terms and pricing with vendors and service providers.',
+      'Monitored service performance against agreed standards.',
+      'Resolved service issues quickly to keep operations running.',
     ],
   },
   {
-    title: 'Operations KPI Dashboard',
-    category: 'Reporting',
-    year: '2018',
-    image: unsplash('1551288049-bebda4e38f71'),
+    title: 'Administrative Budgeting & Cost Control',
+    category: 'Operations',
+    year: '2020 — Present',
+    image: unsplash('1460925895917-afdab827c52f'),
     summary:
-      'Built a single weekly view of cost, service and people metrics for leadership.',
-    outcome: 'Adopted by the executive team',
+      'Plan and control budgets for all administrative functions.',
+    outcome: 'Disciplined expense management',
     details: [
-      'Agreed 24 KPIs with department heads and set clear data owners.',
-      'Replaced six separate spreadsheets with one automated report.',
+      'Prepared annual budgets for administrative functions.',
+      'Monitored spending and identified cost-saving opportunities.',
+    ],
+  },
+  {
+    title: 'EHS Compliance Programme',
+    category: 'EHS',
+    year: '2015 — 2017',
+    image: unsplash('1581092160562-40aa08e78837'),
+    summary:
+      'Led workplace safety across offices and telecom sites, from risk assessment to training and investigations.',
+    outcome: 'Best EHS Lead award from Huawei',
+    details: [
+      'Ran hazard identification and risk assessments across sites.',
+      'Delivered safety training for employees and field teams.',
+      'Investigated incidents and drove corrective and preventive actions.',
+    ],
+  },
+  {
+    title: 'Emergency Response Planning',
+    category: 'EHS',
+    year: '2015 — 2017',
+    image: unsplash('1504307651254-35680f356dfd'),
+    summary:
+      'Developed and implemented emergency response plans for accidents, incidents and natural disasters.',
+    outcome: 'Prepared, trained teams',
+    details: [
+      'Defined response procedures, roles and escalation paths.',
+      'Trained staff on emergency procedures and evacuation.',
     ],
   },
 ]
 
+// Events: awards and recognition for now. Add real events (conferences,
+// trainings, company events) here when available.
 export const events = [
   {
-    title: 'Annual Leadership Summit',
-    type: 'Organised',
-    date: 'March 2025',
-    location: 'Riyadh',
+    title: 'Project Completion Awards',
+    type: 'Award',
+    date: 'Huawei',
+    location: 'Multiple awards',
     image: unsplash('1540575467063-178a50c2df87'),
-    summary: 'Planned and ran a two-day summit for 400 leaders, from venue to logistics and agenda.',
+    summary: 'Recognised by Huawei with multiple awards for successful, high-quality project delivery.',
   },
   {
-    title: 'Middle East Facilities Management Expo',
-    type: 'Speaker',
-    date: 'November 2024',
-    location: 'Dubai',
-    image: unsplash('1505373877841-8d25f7d46678'),
-    summary: 'Spoke on “Integrated Facilities Management at Scale” to an audience of 300 practitioners.',
-  },
-  {
-    title: 'Operations Excellence Workshop',
-    type: 'Host',
-    date: 'June 2024',
+    title: 'Best EHS Lead',
+    type: 'Award',
+    date: 'Huawei',
     location: 'Riyadh',
-    image: unsplash('1552664730-d307ca884978'),
-    summary: 'Hosted a hands-on workshop on lean process mapping for 40 managers.',
+    image: unsplash('1505373877841-8d25f7d46678'),
+    summary: 'Awarded by Huawei for outstanding safety leadership as EHS Lead.',
   },
   {
-    title: 'Company Annual Gala',
-    type: 'Organised',
-    date: 'December 2023',
-    location: 'Jeddah',
+    title: 'Best Employee of the Year',
+    type: 'Award',
+    date: 'LCC A-TechM',
+    location: 'Multiple awards',
+    image: unsplash('1552664730-d307ca884978'),
+    summary: 'Named Best Employee of the Year by LCC A-TechM on multiple occasions.',
+  },
+  {
+    title: 'IOSH Certification',
+    type: 'Certification',
+    date: 'Shields Limited',
+    location: 'Saudi Arabia',
     image: unsplash('1511578314322-379afb476865'),
-    summary: 'Led end-to-end planning for an 800-guest annual celebration, delivered on budget.',
+    summary: 'Certified in environment, health and safety management through IOSH.',
   },
 ]
 
-export const testimonials = [
-  {
-    quote:
-      'Rizwan brings calm to complex situations. The operations function went from reactive to genuinely strategic under that leadership.',
-    name: 'Full Name',
-    title: 'Chief Operating Officer, Company Name',
-  },
-  {
-    quote:
-      'Every project was delivered with clarity, structure and attention to detail. A rare combination of planning and execution.',
-    name: 'Full Name',
-    title: 'Managing Director, Company Name',
-  },
-]
+// Add real testimonials here; the section stays hidden while this is empty.
+export const testimonials = []
 
 export const contact = {
-  email: 'rizwan@example.com',
-  phone: '+966 50 000 0000',
+  email: 'rixwanali@ymail.com',
+  phone: '+966 59 425 7907',
   location: 'Riyadh, Saudi Arabia',
-  linkedin: 'https://www.linkedin.com/',
+  linkedin: '', // add LinkedIn URL when available
 }
 
 export const nav = [

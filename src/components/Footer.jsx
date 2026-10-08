@@ -7,7 +7,7 @@ export default function Footer() {
         <p>© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
         <nav aria-label="Footer">
           {nav.map((n) => <a key={n.id} href={`#${n.id}`}>{n.label}</a>)}
-          <a href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+          {contact.linkedin && <a href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>}
         </nav>
       </div>
     </footer>

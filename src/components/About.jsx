@@ -11,7 +11,7 @@ function CredList({ title, items }) {
         {items.map((it) => (
           <li key={it.title}>
             <span className="cred-title">{it.title}</span>
-            <span className="cred-meta">{it.place} · {it.year}</span>
+            <span className="cred-meta">{[it.place, it.year].filter(Boolean).join(' · ')}</span>
           </li>
         ))}
       </ul>
@@ -30,6 +30,7 @@ export default function About() {
             <p className="about-caption">
               <strong>{profile.name}</strong>
               <span>{profile.location}</span>
+              <span>{about.languages.join(' · ')}</span>
               <span className="status"><i aria-hidden /> {profile.availability}</span>
             </p>
           </Reveal>

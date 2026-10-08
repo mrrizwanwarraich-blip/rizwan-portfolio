@@ -20,9 +20,9 @@ export default function Contact() {
   const rows = [
     { label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
     { label: 'Phone', value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}` },
-    { label: 'LinkedIn', value: 'View profile', href: contact.linkedin },
+    contact.linkedin && { label: 'LinkedIn', value: 'View profile', href: contact.linkedin },
     { label: 'Location', value: contact.location },
-  ]
+  ].filter(Boolean)
 
   return (
     <section className="section" id="contact">
@@ -30,7 +30,7 @@ export default function Contact() {
         <SectionHead
           eyebrow="Contact"
           title="Let’s talk operations."
-          lead="Whether it’s a leadership role, a consulting engagement or a speaking invitation — I’d be glad to hear from you."
+          lead="Whether it’s a leadership role or a new collaboration, I’d be glad to hear from you."
         />
         <div className="contact-grid">
           <Reveal as="ul" className="contact-list">

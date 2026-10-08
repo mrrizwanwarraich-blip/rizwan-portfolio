@@ -33,7 +33,7 @@ export default function Nav() {
     <header className={`nav ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="nav-inner">
         <a href="#top" className="nav-brand" onClick={() => setOpen(false)}>
-          {profile.name}
+          {profile.shortName}
         </a>
         <nav className="nav-links" aria-label="Primary">
           {nav.map((n) => (
@@ -42,7 +42,7 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <a href={profile.cv} className="nav-cta">Download CV</a>
+        <a href={profile.cv} className="nav-cta" target="_blank" rel="noreferrer">Download CV</a>
         <button
           className="nav-toggle"
           aria-label={open ? 'Close menu' : 'Open menu'}

@@ -61,7 +61,7 @@ export default function Projects() {
         <SectionHead
           eyebrow="Projects"
           title="20+ projects. Measurable outcomes."
-          lead="A selection of initiatives across facilities, process, compliance and delivery."
+          lead="A selection of work across project delivery, administration, operations and EHS."
         />
         <Reveal className="filters" role="tablist" aria-label="Filter projects">
           {categories.map((c) => (

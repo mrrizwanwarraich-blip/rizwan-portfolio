@@ -8,8 +8,8 @@ export default function Experience() {
       <div className="container">
         <SectionHead
           eyebrow="Experience"
-          title="Twelve years of building operations."
-          lead="From hands-on execution to leading operations for organisations of more than a thousand people."
+          title="Eleven years of building operations."
+          lead="From EHS Lead to Project Manager to Admin Manager, growing with LCC A-TechM in Riyadh since 2015."
         />
         <ol className="timeline">
           {experience.map((job) => (

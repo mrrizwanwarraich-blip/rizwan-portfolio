@@ -10,8 +10,8 @@ export default function Events() {
       <div className="container">
         <SectionHead
           eyebrow="Events"
-          title="On stage and behind the scenes."
-          lead="Summits organised, talks given and workshops hosted."
+          title="Recognition along the way."
+          lead="Awards, certifications and milestones."
         />
         <Reveal className="event-feature">
           <Media src={feature.image} alt="" className="event-feature-media" />

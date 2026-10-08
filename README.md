@@ -1,6 +1,6 @@
 # rizwan-portfolio
 
-Portfolio for an Operations & Administration Manager. React 18 + Vite, plain CSS, no animation libraries.
+Portfolio for Muhammad Rizwan Javed, Administration & Operations Manager. React 18 + Vite, plain CSS, no animation libraries.
 
 ```bash
 npm install
