@@ -1,7 +1,7 @@
 // All site content lives here. Edit this file to update the site —
 // no component changes needed. Image fields accept a URL or a path in /public
-// (e.g. '/images/portrait.jpg'); leave empty ('') to show the neutral placeholder.
-// Project and event images are stock photos for now; replace with real ones.
+// (e.g. '/images/rizwan-about.png'); leave empty ('') to show the neutral placeholder.
+// Project images are stock photos for now; replace with real ones.
 
 const unsplash = (id, w = 1600) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
@@ -16,10 +16,17 @@ export const profile = {
   headline: 'Muhammad Rizwan Javed',
   intro:
     'Administration and operations manager with 11+ years across telecommunications and giga-projects, now leading administration for Tech Mahindra Arabia on NEOM. I oversee operations, optimise resources and implement efficient systems that keep projects on time and within budget.',
-  portrait: '/images/portrait.jpg',
-  heroImage: unsplash('1497366216548-37526070297c', 2400),
+  // Background-removed cutouts (transparent PNGs).
+  heroCutout: '/images/rizwan-hero.png',
+  portrait: '/images/rizwan-about.png',
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
 }
+
+// Small floating cards beside the hero photo.
+export const heroBadges = [
+  { value: '11+ years', label: 'Telecom & giga-projects' },
+  { value: 'IOSH certified', label: 'Environment, Health & Safety' },
+]
 
 export const stats = [
   { value: '11', suffix: '+', label: 'Years of experience' },
@@ -257,15 +264,16 @@ export const projects = [
   },
 ]
 
-// Events: awards and recognition for now. Add real events (conferences,
-// trainings, company events) here when available.
+// Events and awards. Photos live in /public/images/events; `position` sets
+// which part of the photo stays visible when it is cropped to fit the card.
 export const events = [
   {
     title: 'Project Completion Awards',
     type: 'Award',
     date: 'Huawei',
     location: 'Multiple awards',
-    image: unsplash('1540575467063-178a50c2df87'),
+    image: '/images/events/certificate.jpg',
+    position: 'center 14%',
     summary: 'Recognised by Huawei with multiple awards for successful, high-quality project delivery.',
   },
   {
@@ -273,24 +281,27 @@ export const events = [
     type: 'Award',
     date: 'Huawei',
     location: 'Riyadh',
-    image: unsplash('1505373877841-8d25f7d46678'),
-    summary: 'Awarded by Huawei for outstanding safety leadership as EHS Lead.',
+    image: '/images/events/safety-training.jpg',
+    position: 'center 40%',
+    summary: 'Awarded by Huawei for outstanding safety leadership as EHS Lead, including safety training for field teams.',
   },
   {
     title: 'Best Employee of the Year',
     type: 'Award',
     date: 'LCC A-TechM',
     location: 'Multiple awards',
-    image: unsplash('1552664730-d307ca884978'),
+    image: '/images/events/team-briefing.jpg',
+    position: 'center 35%',
     summary: 'Named Best Employee of the Year by LCC A-TechM on multiple occasions.',
   },
   {
-    title: 'IOSH Certification',
-    type: 'Certification',
-    date: 'Shields Limited',
-    location: 'Saudi Arabia',
-    image: unsplash('1511578314322-379afb476865'),
-    summary: 'Certified in environment, health and safety management through IOSH.',
+    title: 'Tech Mahindra Arabia',
+    type: 'Milestone',
+    date: '2024',
+    location: 'NEOM',
+    image: '/images/events/tech-mahindra.jpg',
+    position: 'center 30%',
+    summary: 'Joined Tech Mahindra Arabia as Admin Manager on the NEOM project.',
   },
 ]
 
@@ -311,3 +322,41 @@ export const nav = [
   { id: 'events', label: 'Events' },
   { id: 'contact', label: 'Contact' },
 ]
+
+// Interface labels (buttons, form fields, aria text).
+export const ui = {
+  arrow: '›',
+  viewWork: 'View my work',
+  downloadCv: 'Download CV',
+  getInTouch: 'Get in touch',
+  competencies: 'Core competencies',
+  education: 'Education',
+  certifications: 'Certifications',
+  all: 'All',
+  filterProjects: 'Filter projects',
+  outcome: 'Outcome',
+  close: 'Close',
+  testimonials: 'Testimonials',
+  email: 'Email',
+  phone: 'Phone',
+  linkedin: 'LinkedIn',
+  viewProfile: 'View profile',
+  location: 'Location',
+  formName: 'Name',
+  formEmail: 'Email',
+  formCompany: 'Company',
+  optional: '(optional)',
+  formMessage: 'Message',
+  send: 'Send message',
+  sentNote: 'Your mail app should open with the message ready to send.',
+  enquiryFrom: 'Enquiry from',
+  rights: 'All rights reserved.',
+  primaryNav: 'Primary',
+  footerNav: 'Footer',
+  openMenu: 'Open menu',
+  closeMenu: 'Close menu',
+  switchLang: 'العربية', // label of the language button: the language it switches to
+  switchLangAria: 'عرض الموقع بالعربية',
+  toLight: 'Switch to light mode',
+  toDark: 'Switch to dark mode',
+}

@@ -1,10 +1,11 @@
-import { testimonials } from '../data/content'
+import { useContent } from '../settings'
 import Reveal from './Reveal'
 
 export default function Testimonials() {
+  const { testimonials, ui } = useContent()
   if (!testimonials.length) return null
   return (
-    <section className="section testimonials" aria-label="Testimonials">
+    <section className="section testimonials" aria-label={ui.testimonials}>
       <div className="container quote-grid">
         {testimonials.map((t, i) => (
           <Reveal as="figure" key={i} className="quote" delay={i * 80}>

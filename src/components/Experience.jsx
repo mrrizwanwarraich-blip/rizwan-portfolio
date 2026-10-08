@@ -1,8 +1,9 @@
-import { experience, sections } from '../data/content'
+import { useContent } from '../settings'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
 
 export default function Experience() {
+  const { experience, sections } = useContent()
   return (
     <section className="section section-alt" id="experience">
       <div className="container">

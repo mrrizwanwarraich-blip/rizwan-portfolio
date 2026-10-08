@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 // Image with a quiet gradient placeholder underneath, so layout stays
 // intact while loading, when the source is missing, or if it fails.
-export default function Media({ src, alt = '', label, className = '', eager = false }) {
+export default function Media({ src, alt = '', label, className = '', eager = false, position }) {
   const [state, setState] = useState(src ? 'loading' : 'empty')
 
   return (
@@ -14,6 +14,7 @@ export default function Media({ src, alt = '', label, className = '', eager = fa
           alt={alt}
           loading={eager ? 'eager' : 'lazy'}
           decoding="async"
+          style={position && { objectPosition: position }}
           onLoad={() => setState('loaded')}
           onError={() => setState('error')}
         />
