@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { projects } from '../data/content'
+import { projects, sections } from '../data/content'
 import Media from './Media'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
@@ -58,11 +58,7 @@ export default function Projects() {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <SectionHead
-          eyebrow="Projects"
-          title="20+ projects. Measurable outcomes."
-          lead="A selection of work across project delivery, administration, operations and EHS."
-        />
+        <SectionHead {...sections.projects} />
         <Reveal className="filters" role="tablist" aria-label="Filter projects">
           {categories.map((c) => (
             <button

@@ -1,4 +1,4 @@
-import { experience } from '../data/content'
+import { experience, sections } from '../data/content'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
 
@@ -6,11 +6,7 @@ export default function Experience() {
   return (
     <section className="section section-alt" id="experience">
       <div className="container">
-        <SectionHead
-          eyebrow="Experience"
-          title="Eleven years of building operations."
-          lead="From EHS Lead to Project Manager to Admin Manager, growing with LCC A-TechM in Riyadh since 2015."
-        />
+        <SectionHead {...sections.experience} />
         <ol className="timeline">
           {experience.map((job) => (
             <Reveal as="li" key={job.role + job.period} className="job">

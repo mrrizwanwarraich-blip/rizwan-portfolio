@@ -33,7 +33,7 @@ export default function Nav() {
     <header className={`nav ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="nav-inner">
         <a href="#top" className="nav-brand" onClick={() => setOpen(false)}>
-          {profile.shortName}
+          {profile.name}
         </a>
         <nav className="nav-links" aria-label="Primary">
           {nav.map((n) => (

@@ -12,10 +12,10 @@ export const profile = {
   initials: 'RJ',
   role: 'Administration & Operations Manager',
   location: 'Riyadh, Saudi Arabia',
-  availability: 'Open to senior administration and operations roles',
-  headline: 'Operations that run quietly. Results that speak loudly.',
+  status: 'Admin Manager at LCC A-TechM',
+  headline: 'Muhammad Rizwan Javed',
   intro:
-    'For more than 11 years in telecommunications, I have led administration, projects and workplace safety — keeping operations efficient, compliant and on budget.',
+    'Administration and operations manager with 11+ years in telecommunications. I oversee operations, optimise resources and implement efficient systems, delivering projects on time and within budget.',
   portrait: '/images/portrait.jpg',
   heroImage: unsplash('1497366216548-37526070297c', 2400),
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
@@ -28,11 +28,39 @@ export const stats = [
   { value: '4', suffix: '', label: 'Languages spoken' },
 ]
 
+// Section headings and intros, in page order.
+export const sections = {
+  about: {
+    eyebrow: 'About',
+    title: 'Efficient systems. Productive teams.',
+  },
+  experience: {
+    eyebrow: 'Experience',
+    title: 'Eleven years at LCC A-TechM.',
+    lead: 'Three roles at one company: EHS Lead from 2015, Project Manager from 2017 and Admin Manager since 2020.',
+  },
+  projects: {
+    eyebrow: 'Projects',
+    title: '20+ projects. On time and within budget.',
+    lead: 'Telecom project delivery for Huawei, and the administration, operations and safety work behind it.',
+  },
+  events: {
+    eyebrow: 'Events',
+    title: 'Awards and recognition.',
+    lead: 'Recognised by Huawei and LCC A-TechM for project delivery, safety leadership and performance.',
+  },
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Get in touch.',
+    lead: 'For roles, projects or collaboration in administration and operations, I’d be glad to hear from you.',
+  },
+}
+
 export const about = {
   paragraphs: [
-    'I am an administration and operations leader who brings structure, efficiency and accountability to every team I work with.',
-    'Since 2015 I have grown with LCC A-TechM in Riyadh, from EHS Lead to Project Manager to Admin Manager. Along the way I have delivered telecom projects for Huawei, managed budgets and vendor contracts, and built the policies and systems that keep a busy organisation running smoothly.',
-    'My work has been recognised with multiple project completion awards and a Best EHS Lead award from Huawei, and multiple Best Employee of the Year awards from LCC A-TechM.',
+    'I oversee operations, optimise resources and implement efficient systems that raise productivity across the organisation.',
+    'I joined LCC A-TechM in Riyadh in 2015 as EHS Lead, moved up to Project Manager in 2017 and have been Admin Manager since 2020. I coordinate cross-functional teams, manage timelines and budgets, and work closely with stakeholders, vendors and clients to reach strategic objectives in the telecom industry.',
+    'My work has earned multiple project completion awards and a Best EHS Lead award from Huawei, as well as multiple Best Employee of the Year awards from LCC A-TechM.',
   ],
   competencies: [
     'Administration Management',

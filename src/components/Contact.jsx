@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { contact } from '../data/content'
+import { contact, sections } from '../data/content'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
 
@@ -27,11 +27,7 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="container">
-        <SectionHead
-          eyebrow="Contact"
-          title="Let’s talk operations."
-          lead="Whether it’s a leadership role or a new collaboration, I’d be glad to hear from you."
-        />
+        <SectionHead {...sections.contact} />
         <div className="contact-grid">
           <Reveal as="ul" className="contact-list">
             {rows.map((r) => (

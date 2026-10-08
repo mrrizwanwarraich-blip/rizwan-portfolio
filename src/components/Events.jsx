@@ -1,4 +1,4 @@
-import { events } from '../data/content'
+import { events, sections } from '../data/content'
 import Media from './Media'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
@@ -8,11 +8,7 @@ export default function Events() {
   return (
     <section className="section section-alt" id="events">
       <div className="container">
-        <SectionHead
-          eyebrow="Events"
-          title="Recognition along the way."
-          lead="Awards, certifications and milestones."
-        />
+        <SectionHead {...sections.events} />
         <Reveal className="event-feature">
           <Media src={feature.image} alt="" className="event-feature-media" />
           <div className="event-feature-body">

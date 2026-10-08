@@ -1,4 +1,4 @@
-import { about, profile } from '../data/content'
+import { about, profile, sections } from '../data/content'
 import Media from './Media'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
@@ -23,7 +23,7 @@ export default function About() {
   return (
     <section className="section" id="about">
       <div className="container">
-        <SectionHead eyebrow="About" title="Calm leadership. Clear systems." />
+        <SectionHead {...sections.about} />
         <div className="about-grid">
           <Reveal className="about-portrait">
             <Media src={profile.portrait} alt={profile.name} label={profile.initials} className="portrait" />
@@ -31,7 +31,7 @@ export default function About() {
               <strong>{profile.name}</strong>
               <span>{profile.location}</span>
               <span>{about.languages.join(' · ')}</span>
-              <span className="status"><i aria-hidden /> {profile.availability}</span>
+              <span className="status"><i aria-hidden /> {profile.status}</span>
             </p>
           </Reveal>
           <div className="about-body">
