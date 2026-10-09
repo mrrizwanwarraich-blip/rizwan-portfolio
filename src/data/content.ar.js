@@ -25,6 +25,7 @@ export const heroBadges = [
 export const stats = [
   { value: '11', suffix: '+', label: 'سنة خبرة' },
   { value: '20', suffix: '+', label: 'مشروعًا منجزًا' },
+  { value: '6', suffix: '+', label: 'دول عملت في مشاريعها' },
   { value: '4', suffix: '', label: 'مناصب في شركتين' },
   { value: '4', suffix: '', label: 'لغات' },
 ]

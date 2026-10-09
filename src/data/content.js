@@ -32,6 +32,7 @@ export const heroBadges = [
 export const stats = [
   { value: '11', suffix: '+', label: 'Years of experience' },
   { value: '20', suffix: '+', label: 'Projects delivered' },
+  { value: '6', suffix: '+', label: 'Countries worked in' },
   { value: '4', suffix: '', label: 'Roles across 2 companies' },
   { value: '4', suffix: '', label: 'Languages spoken' },
 ]
