@@ -371,7 +371,7 @@ img { display: block; max-width: 100%; }
   margin-top: 32px;
 }
 
-/* Cutout photo standing on a soft tinted panel; the head rises above it. */
+/* Avatar standing on a soft tinted panel; the head rises above it. */
 .hero-stage {
   position: relative;
   justify-self: end;
@@ -411,8 +411,8 @@ img { display: block; max-width: 100%; }
 }
 .hero-chip strong { font-size: 16px; font-weight: 600; letter-spacing: -0.015em; }
 .hero-chip span { font-size: 12px; color: var(--text-2); }
-.hero-chip-1 { left: -20px; bottom: 12%; }
-.hero-chip-2 { right: -20px; top: 30%; }
+.hero-chip-1 { left: -20px; bottom: 6%; }
+.hero-chip-2 { right: -20px; top: 62%; }
 @media (max-width: 1180px) {
   .hero-chip-1 { left: 10px; }
   .hero-chip-2 { right: 10px; }
@@ -424,7 +424,7 @@ img { display: block; max-width: 100%; }
   .hero-chip strong { font-size: 14px; }
   .hero-chip span { font-size: 11px; }
   .hero-chip-1 { left: -6px; bottom: 8%; }
-  .hero-chip-2 { right: -6px; top: 36%; }
+  .hero-chip-2 { right: -6px; top: 62%; }
 }
 
 .stats {

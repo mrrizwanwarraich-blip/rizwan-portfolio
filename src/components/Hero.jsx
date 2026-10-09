@@ -20,7 +20,7 @@ export default function Hero() {
 
         <Reveal className="hero-stage" delay={200}>
           <div className="hero-stage-bg" aria-hidden />
-          <img src={profile.heroCutout} alt={profile.name} width="652" height="1120" />
+          <img src={profile.heroCutout} alt="" width="400" height="520" />
           {heroBadges.map((b, i) => (
             <p key={b.label} className={`hero-chip hero-chip-${i + 1}`}>
               <strong>{b.value}</strong>

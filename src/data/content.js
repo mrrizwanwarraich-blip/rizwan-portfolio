@@ -1,6 +1,6 @@
 // All site content lives here. Edit this file to update the site —
 // no component changes needed. Image fields accept a URL or a path in /public
-// (e.g. '/images/rizwan-about.png'); leave empty ('') to show the neutral placeholder.
+// (e.g. '/images/avatar-about.svg'); leave empty ('') to show the neutral placeholder.
 // Project images are stock photos for now; replace with real ones.
 
 const unsplash = (id, w = 1600) =>
@@ -16,9 +16,9 @@ export const profile = {
   headline: 'Muhammad Rizwan Javed',
   intro:
     'Administration and operations manager with 11+ years across telecommunications and giga-projects, now leading administration for Tech Mahindra Arabia on NEOM. I oversee operations, optimise resources and implement efficient systems that keep projects on time and within budget.',
-  // Background-removed cutouts (transparent PNGs).
-  heroCutout: '/images/rizwan-hero.png',
-  portrait: '/images/rizwan-about.png',
+  // Illustrated placeholder avatars (not photos of Rizwan).
+  heroCutout: '/images/avatar-hero.svg',
+  portrait: '/images/avatar-about.svg',
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
 }
 
@@ -310,7 +310,7 @@ export const testimonials = []
 
 export const contact = {
   email: 'rixwanali@ymail.com',
-  phone: '+966 59 425 7907',
+  phone: '+966 59 059 9542',
   location: 'Saudi Arabia',
   linkedin: '', // add LinkedIn URL when available
 }
