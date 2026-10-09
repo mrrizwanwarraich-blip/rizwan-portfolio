@@ -371,7 +371,7 @@ img { display: block; max-width: 100%; }
   margin-top: 32px;
 }
 
-/* Avatar standing on a soft tinted panel; the head rises above it. */
+/* Cutout photo standing on a soft tinted panel; the head rises above it. */
 .hero-stage {
   position: relative;
   justify-self: end;
@@ -411,8 +411,8 @@ img { display: block; max-width: 100%; }
 }
 .hero-chip strong { font-size: 16px; font-weight: 600; letter-spacing: -0.015em; }
 .hero-chip span { font-size: 12px; color: var(--text-2); }
-.hero-chip-1 { left: -20px; bottom: 6%; }
-.hero-chip-2 { right: -20px; top: 62%; }
+.hero-chip-1 { left: -24px; bottom: 7%; }
+.hero-chip-2 { right: -24px; top: 54%; }
 @media (max-width: 1180px) {
   .hero-chip-1 { left: 10px; }
   .hero-chip-2 { right: 10px; }
@@ -424,7 +424,7 @@ img { display: block; max-width: 100%; }
   .hero-chip strong { font-size: 14px; }
   .hero-chip span { font-size: 11px; }
   .hero-chip-1 { left: -6px; bottom: 8%; }
-  .hero-chip-2 { right: -6px; top: 62%; }
+  .hero-chip-2 { right: -6px; top: 54%; }
 }
 
 .stats {
@@ -473,17 +473,14 @@ img { display: block; max-width: 100%; }
 }
 .about-portrait { position: sticky; top: 96px; }
 .portrait {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   aspect-ratio: 3 / 4;
   max-width: 330px;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  background: var(--stage);
+  background: var(--placeholder);
   border: 1px solid var(--hairline);
 }
-.portrait img { height: 95%; width: auto; max-width: none; filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.18)); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
 .about-caption { display: flex; flex-direction: column; gap: 2px; margin-top: 20px; font-size: 15px; color: var(--text-2); }
 .about-caption strong { font-size: 17px; color: var(--text); font-weight: 600; }
 .status { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; }

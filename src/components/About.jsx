@@ -27,7 +27,7 @@ export default function About() {
         <div className="about-grid">
           <Reveal className="about-portrait">
             <div className="portrait">
-              <img src={profile.portrait} alt="" width="400" height="520" loading="lazy" decoding="async" />
+              <img src={profile.portrait} alt={profile.name} width="896" height="1195" loading="lazy" decoding="async" />
             </div>
             <p className="about-caption">
               <strong>{profile.name}</strong>
