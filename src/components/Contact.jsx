@@ -21,6 +21,7 @@ export default function Contact() {
   const rows = [
     { label: ui.email, value: contact.email, href: `mailto:${contact.email}` },
     { label: ui.phone, value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}` },
+    contact.whatsapp && { label: ui.whatsapp, value: contact.whatsapp, href: `https://wa.me/${contact.whatsapp.replace(/\D/g, '')}` },
     contact.linkedin && { label: ui.linkedin, value: ui.viewProfile, href: contact.linkedin, text: true },
     { label: ui.location, value: contact.location },
   ].filter(Boolean)

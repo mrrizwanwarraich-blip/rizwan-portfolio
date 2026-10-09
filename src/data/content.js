@@ -21,6 +21,7 @@ export const profile = {
   heroCutout: '/images/rizwan-hero.png',
   portrait: '/images/rizwan-portrait.jpg',
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
+  site: 'https://rizwanjaved.com', // used for link previews and the share card
 }
 
 // Small floating cards beside the hero photo.
@@ -100,10 +101,13 @@ export const about = {
   languages: ['English', 'Arabic', 'Urdu', 'Punjabi'],
 }
 
+// Newest job first: the share card (api/og.js) shows the first entry's company.
+// `logo` is a file in /public/images/logos; leave '' to show the name as text.
 export const experience = [
   {
     role: 'Admin Manager — NEOM Project',
     company: 'Tech Mahindra Arabia Ltd',
+    logo: '/images/logos/tech-mahindra.svg',
     location: 'NEOM',
     period: '2024 — Present',
     summary:
@@ -120,6 +124,7 @@ export const experience = [
   {
     role: 'Admin Manager',
     company: 'LCC A-TechM',
+    logo: '/images/logos/lcc.png',
     location: 'Riyadh',
     period: 'Nov 2020 — 2024',
     summary:
@@ -136,6 +141,7 @@ export const experience = [
   {
     role: 'Project Manager',
     company: 'LCC A-TechM',
+    logo: '/images/logos/lcc.png',
     location: 'Riyadh',
     period: 'Nov 2017 — Oct 2020',
     summary:
@@ -152,6 +158,7 @@ export const experience = [
   {
     role: 'EHS Lead',
     company: 'LCC A-TechM',
+    logo: '/images/logos/lcc.png',
     location: 'Riyadh',
     period: 'Jun 2015 — Oct 2017',
     summary:
@@ -170,6 +177,8 @@ export const experience = [
 export const projects = [
   {
     title: 'NEOM Project Administration',
+    client: 'NEOM',
+    logo: '/images/logos/neom.svg',
     category: 'Administration',
     year: '2024 — Present',
     image: unsplash('1486406146926-c627a92ad1ab'),
@@ -184,6 +193,8 @@ export const projects = [
   },
   {
     title: 'Telecom Project Delivery for Huawei',
+    client: 'Huawei',
+    logo: '/images/logos/huawei.png',
     category: 'Project Delivery',
     year: '2017 — 2020',
     image: unsplash('1516044734145-07ca8eef8731'),
@@ -313,6 +324,7 @@ export const testimonials = []
 export const contact = {
   email: 'rixwanali@ymail.com',
   phone: '+966 59 059 9542',
+  whatsapp: '+92 300 6663100',
   location: 'Saudi Arabia',
   linkedin: '', // add LinkedIn URL when available
 }
@@ -341,6 +353,7 @@ export const ui = {
   testimonials: 'Testimonials',
   email: 'Email',
   phone: 'Phone',
+  whatsapp: 'WhatsApp',
   linkedin: 'LinkedIn',
   viewProfile: 'View profile',
   location: 'Location',

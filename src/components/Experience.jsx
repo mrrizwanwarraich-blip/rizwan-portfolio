@@ -1,4 +1,5 @@
 import { useContent } from '../settings'
+import Logo from './Logo'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
 
@@ -12,6 +13,7 @@ export default function Experience() {
           {experience.map((job) => (
             <Reveal as="li" key={job.role + job.period} className="job">
               <div className="job-meta">
+                <Logo src={job.logo} name={job.logoName || job.company} />
                 <span className="job-period">{job.period}</span>
                 <span className="job-place">{job.company} · {job.location}</span>
               </div>

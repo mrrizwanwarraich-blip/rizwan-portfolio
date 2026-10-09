@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useContent } from '../settings'
+import Logo from './Logo'
 import Media from './Media'
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
@@ -38,6 +39,7 @@ function ProjectSheet({ project, onClose }) {
           <button className="sheet-close" onClick={close} aria-label={ui.close}>×</button>
           <Media src={project.image} alt="" className="sheet-media" />
           <div className="sheet-body">
+            {project.logo && <Logo src={project.logo} name={project.client} className="sheet-logo" />}
             <p className="eyebrow">{project.category} · {project.year}</p>
             <h3>{project.title}</h3>
             <p className="sheet-summary">{project.summary}</p>
@@ -81,6 +83,7 @@ export default function Projects() {
             <Reveal key={p.title} delay={(i % 3) * 70}>
               <button className="project-card" onClick={() => setSelected(projects.indexOf(p))}>
                 <Media src={p.image} alt="" className="project-media" />
+                {p.logo && <Logo src={p.logo} name={p.client} className="project-logo" />}
                 <div className="project-body">
                   <p className="eyebrow">{p.category} · {p.year}</p>
                   <h3>{p.title}</h3>

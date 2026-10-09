@@ -522,6 +522,34 @@ img { display: block; max-width: 100%; }
 }
 @media (max-width: 560px) { .creds { grid-template-columns: 1fr; } }
 
+/* ───────────────────────── Company logos ───────────────────────── */
+.logo-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  height: 48px;
+  min-width: 48px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  border: 1px solid var(--hairline);
+  color: #1d1d1f;
+}
+.logo-tile img { height: 100%; width: auto; max-width: 132px; object-fit: contain; }
+.logo-tile b { font-size: 15px; font-weight: 600; letter-spacing: 0.02em; }
+.job-meta .logo-tile { margin-bottom: 14px; }
+.project-logo {
+  position: absolute;
+  top: 14px;
+  inset-inline-start: 14px;
+  z-index: 1;
+  height: 52px;
+  padding: 8px 12px;
+  box-shadow: var(--shadow);
+}
+.sheet-logo { margin-bottom: 18px; }
+
 /* ───────────────────────── Experience ───────────────────────── */
 .timeline { border-top: 1px solid var(--hairline); }
 .job {
@@ -580,6 +608,7 @@ img { display: block; max-width: 100%; }
 }
 .project-grid > * { display: flex; }
 .project-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;

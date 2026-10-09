@@ -93,7 +93,7 @@ export const about = {
   languages: ['الإنجليزية', 'العربية', 'الأردية', 'البنجابية'],
 }
 
-export const experience = [
+const experienceAr = [
   {
     role: 'مدير الشؤون الإدارية — مشروع نيوم',
     company: 'شركة تك ماهيندرا العربية المحدودة',
@@ -155,6 +155,7 @@ export const experience = [
     ],
   },
 ]
+export const experience = experienceAr.map((job, i) => ({ ...job, logo: en.experience[i].logo, logoName: en.experience[i].company }))
 
 const CAT = { admin: 'الشؤون الإدارية', delivery: 'تنفيذ المشاريع', ops: 'العمليات', ehs: 'السلامة' }
 const projectsAr = [
@@ -241,7 +242,7 @@ const projectsAr = [
     ],
   },
 ]
-export const projects = projectsAr.map((p, i) => ({ ...p, image: en.projects[i].image }))
+export const projects = projectsAr.map((p, i) => ({ ...p, image: en.projects[i].image, logo: en.projects[i].logo, client: en.projects[i].client }))
 
 const eventsAr = [
   {
@@ -302,6 +303,7 @@ export const ui = {
   testimonials: 'آراء وتوصيات',
   email: 'البريد الإلكتروني',
   phone: 'الجوال',
+  whatsapp: 'واتساب',
   linkedin: 'لينكد إن',
   viewProfile: 'عرض الملف الشخصي',
   location: 'مقر الإقامة',
