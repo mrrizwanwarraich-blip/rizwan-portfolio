@@ -1,6 +1,8 @@
+import { createHash } from 'node:crypto'
+import { readFileSync } from 'node:fs'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { profile } from './src/data/content.js'
+import { contact, experience, profile } from './src/data/content.js'
 
 // Writes the page title, description and link-preview tags into index.html from
 // content.js, so they never drift from the site. The preview image itself is
@@ -12,7 +14,15 @@ const seoFromContent = () => ({
     for (const [name, text, max] of [['seoTitle', title, 60], ['seoDescription', description, 160], ['shareDescription', share, 125]]) {
       if (text.length > max) this.warn?.(`profile.${name} is ${text.length} characters (limit ${max}); previews may cut it off`)
     }
-    const image = `${profile.site}/api/og`
+    // Version the card URL by everything drawn on it, so link-preview tools and
+    // caches fetch a fresh image whenever the card changes.
+    const version = createHash('sha1')
+      .update(JSON.stringify({ profile, contact, job: experience[0] }))
+      .update(readFileSync('api/og.js'))
+      .update(readFileSync(`public${profile.heroCutout}`))
+      .digest('hex')
+      .slice(0, 10)
+    const image = `${profile.site}/api/og?v=${version}`
     const meta = (key, name, content) => ({ tag: 'meta', attrs: { [key]: name, content }, injectTo: 'head' })
     return {
       html: html.replace(/<title>.*?<\/title>/, `<title>${title.replace(/&/g, '&amp;')}</title>`),

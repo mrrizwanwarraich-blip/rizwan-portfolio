@@ -53,9 +53,9 @@ export async function GET(request) {
         // call to action
         el('div', { display: 'flex', alignItems: 'center', marginTop: 26 },
           el('div',
-            { display: 'flex', padding: '12px 24px', borderRadius: 999, background: '#0071e3', color: '#fff', fontSize: 22 },
-            'View full profile'),
-          el('div', { marginLeft: 18, fontSize: 22, color: GREY }, profile.site.replace(/^https?:\/\//, '')),
+            { display: 'flex', padding: '13px 28px', borderRadius: 999, background: '#0071e3', color: '#fff', fontSize: 26 },
+            'Get in touch'),
+          el('div', { marginLeft: 20, fontSize: 24, color: INK }, `Visit ${profile.site.replace(/^https?:\/\//, '')}`),
         ),
       ),
       // photo
