@@ -8,19 +8,22 @@ import { profile } from './src/data/content.js'
 const seoFromContent = () => ({
   name: 'seo-from-content',
   transformIndexHtml(html) {
-    const title = `${profile.name} — ${profile.role}`
+    const { seoTitle: title, seoDescription: description, shareDescription: share } = profile
+    for (const [name, text, max] of [['seoTitle', title, 60], ['seoDescription', description, 160], ['shareDescription', share, 125]]) {
+      if (text.length > max) this.warn?.(`profile.${name} is ${text.length} characters (limit ${max}); previews may cut it off`)
+    }
     const image = `${profile.site}/api/og`
     const meta = (key, name, content) => ({ tag: 'meta', attrs: { [key]: name, content }, injectTo: 'head' })
     return {
       html: html.replace(/<title>.*?<\/title>/, `<title>${title.replace(/&/g, '&amp;')}</title>`),
       tags: [
-        meta('name', 'description', profile.intro),
+        meta('name', 'description', description),
         { tag: 'link', attrs: { rel: 'canonical', href: `${profile.site}/` }, injectTo: 'head' },
         meta('property', 'og:type', 'profile'),
         meta('property', 'og:site_name', profile.name),
         meta('property', 'og:url', `${profile.site}/`),
         meta('property', 'og:title', title),
-        meta('property', 'og:description', profile.intro),
+        meta('property', 'og:description', share),
         meta('property', 'og:image', image),
         meta('property', 'og:image:type', 'image/png'),
         meta('property', 'og:image:width', '1200'),
@@ -30,7 +33,7 @@ const seoFromContent = () => ({
         meta('property', 'og:locale:alternate', 'ar_SA'),
         meta('name', 'twitter:card', 'summary_large_image'),
         meta('name', 'twitter:title', title),
-        meta('name', 'twitter:description', profile.intro),
+        meta('name', 'twitter:description', share),
         meta('name', 'twitter:image', image),
       ],
     }

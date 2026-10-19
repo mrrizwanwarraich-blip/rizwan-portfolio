@@ -23,7 +23,7 @@ export function SettingsProvider({ children }) {
     root.lang = lang
     root.dir = lang === 'ar' ? 'rtl' : 'ltr'
     const { profile } = content[lang]
-    document.title = `${profile.name} — ${profile.role}`
+    document.title = profile.seoTitle
   }, [lang])
 
   useEffect(() => {

@@ -22,6 +22,13 @@ export const profile = {
   portrait: '/images/rizwan-portrait.jpg',
   cv: '/Muhammad_Rizwan_Javed_CV.pdf',
   site: 'https://rizwanjaved.com', // used for link previews and the share card
+  // Search and link-preview text. Keep within the limits so nothing is cut off:
+  // title ≤ 60 characters, description ≤ 155, share text ≤ 125.
+  seoTitle: 'Muhammad Rizwan Javed — Admin & Operations Manager',
+  seoDescription:
+    'Admin Manager at Tech Mahindra Arabia on NEOM. 11+ years in administration, operations, project management and EHS in Saudi Arabia.',
+  shareDescription:
+    'Admin Manager, Tech Mahindra Arabia (NEOM). 11+ years in administration, operations and EHS across Saudi Arabia.',
 }
 
 // Small floating cards beside the hero photo.

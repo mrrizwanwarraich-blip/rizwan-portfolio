@@ -50,7 +50,13 @@ export async function GET(request) {
         row('Phone', contact.phone),
         contact.whatsapp ? row('WhatsApp', contact.whatsapp) : null,
         row('Email', contact.email),
-        row('Web', profile.site.replace(/^https?:\/\//, '')),
+        // call to action
+        el('div', { display: 'flex', alignItems: 'center', marginTop: 26 },
+          el('div',
+            { display: 'flex', padding: '12px 24px', borderRadius: 999, background: '#0071e3', color: '#fff', fontSize: 22 },
+            'View full profile'),
+          el('div', { marginLeft: 18, fontSize: 22, color: GREY }, profile.site.replace(/^https?:\/\//, '')),
+        ),
       ),
       // photo
       el('div',
